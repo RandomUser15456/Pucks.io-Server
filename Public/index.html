@@ -1,0 +1,85 @@
+<!doctype html>
+<html lang="en-us">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <link rel="shortcut icon" href="TemplateData/favicon.ico">
+    <title>PucksBall</title>
+    <link rel="stylesheet" href="TemplateData/style.css">
+    <link rel="stylesheet" href="TemplateData/pucks_style.css">
+</head>
+
+<body class="template Pucks" id="template">
+
+    <!--<div id="TextInputReceiver" contentEditable="true"></div>-->
+    <div id="mainwebcontent" style="height: 100%;width: 100%; z-index:98; position:relative">
+        <div id="spacer" style="height: 25%;"></div>
+        <img id="ball" src="TemplateData/puck.png"
+            style="position: absolute;left: 50%;margin-left: -320px;margin-top: 170px;">
+        <img id="car" src="TemplateData/car_blue.png"
+            style="position: absolute;left: 50%;margin-left: 150px;margin-top: 115px;">
+        <div id="auth" class="transparentcontainer">
+            <div id="logo">PucksBall</div>
+            <div class="container">
+                <div id="login-data" style="padding: 5px; margin: auto; margin-top: 15px; width: 80%;">
+                    <!--<button id="anon_button" class="button">PLAY ANONYMOUSLY</button>-->
+                    <select id="game-type">
+                        <option value="Pucks" selected disabled>Game Type</option>
+                        <option value="Bumpy">BumpyBall</option>
+                        <option value="Pucks">Pucks</option>
+                    </select>
+                    <button id="play-button" class="button">PLAY</button>
+                </div>
+            </div>
+        </div>
+        <div id="login" class="transparentcontainer2" style="display: none;">
+            <div id="closer">
+                <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" fill="currentColor"
+                    version="1.1" id="Capa_1" viewBox="0 0 460.775 460.775" xml:space="preserve">
+                    <path
+                        d="M285.08,230.397L456.218,59.27c6.076-6.077,6.076-15.911,0-21.986L423.511,4.565c-2.913-2.911-6.866-4.55-10.992-4.55  c-4.127,0-8.08,1.639-10.993,4.55l-171.138,171.14L59.25,4.565c-2.913-2.911-6.866-4.55-10.993-4.55  c-4.126,0-8.08,1.639-10.992,4.55L4.558,37.284c-6.077,6.075-6.077,15.909,0,21.986l171.138,171.128L4.575,401.505  c-6.074,6.077-6.074,15.911,0,21.986l32.709,32.719c2.911,2.911,6.865,4.55,10.992,4.55c4.127,0,8.08-1.639,10.994-4.55  l171.117-171.12l171.118,171.12c2.913,2.911,6.866,4.55,10.993,4.55c4.128,0,8.081-1.639,10.992-4.55l32.709-32.719  c6.074-6.075,6.074-15.909,0-21.986L285.08,230.397z">
+                    </path>
+                </svg>
+            </div>
+            <div id="logo">PucksBall</div>
+            <div id="login-data" style="padding: 5px;width: 80%;max-width: 500px;">
+                <input type="text" id="username" name="username" placeholder="Username...">
+                <input type="password" id="password" name="password" placeholder="Password...">
+                <p id="login-error" style="color: red; display: none;">Invalid username or password</p>
+                <button id="sign-btn" class="button">Login</button>
+                <p id="sign-up" style="cursor: pointer; color: white; user-select: none;">Don't have an account? Sign up here.</p>
+            </div>
+            <a href='' id="discordlink" style="display:none;">
+                <img alt='Join The Discord Community' src='TemplateData/discord_logo_white.png'
+                    style="width:200px;margin-top: 25px;" />
+            </a>
+        </div>
+        <div id="loadingcontainer" style="display: none;">
+            <div id="logo">PucksBall</div>
+            <div id="loadingBox">
+                <div id="bgBar"></div>
+                <div id="progressBar"></div>
+                <p id="loadingInfo">Loading... <img src="TemplateData/loading.gif" /></p>
+            </div>
+        </div>
+        <div id="alert" style="display: none;">
+            <div id="spacer" style="height: 25%;"></div>
+            <div id="logo">PucksBall</div>
+            <div id="alertBox">
+                <p id="alertMessage">ALERT</p>
+            </div>
+        </div>
+    </div>
+    <div id="gameContainer" style="width: 100%;height: 100%;position: absolute; left: 0px; top: 0px; display: none;"
+        class="unity-desktop">
+        <canvas id="unity-canvas"></canvas>
+        <div id="applixir_vanishing_div" hidden>
+            <iframe id="applixir_parent" allowed="autoplay"></iframe>
+        </div>
+    </div>
+    <script src="./spoofer.js"></script>
+    <script src="./main.js"></script>
+</body>
+
+</html>

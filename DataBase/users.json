@@ -1,0 +1,26 @@
+{
+    "Zpayer": {
+        "Uid": "21fd2cc52b08c6b09694cf46860b6c9a0458fd2b7d1ec2658774c85e1a1a9936MTc0NzgyNDYwODMyMw==",
+        "last_name": "Zpayer",
+        "Created": 0,
+        "LastUpdate": 0,
+        "Wins": 0,
+        "goals": 0,
+        "assists": 0,
+        "Draws": 0,
+        "Losses": 0,
+        "Experience": 0
+    },
+    "Zpayer1": {
+        "Uid": "ac2da41f6127bd5f13cc62e87a1664a0629cb1ebec85bceb18051cb51bead453MTc0ODE4MTA4NjM5Mw==",
+        "last_name": "Zpayer1",
+        "Created": 0,
+        "LastUpdate": 0,
+        "Wins": 0,
+        "goals": 0,
+        "assists": 0,
+        "Draws": 0,
+        "Losses": 0,
+        "Experience": 100000
+    }
+}
