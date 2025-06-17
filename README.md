@@ -8,9 +8,7 @@
 ---
 
 ## 🚧 Missing Features
-- Working boost system
-- Collision detection
-- Map boundaries
+- Everything ( player can only move )
 
 ---
 
